@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Setup Docker') {
       steps {
-        sh 'ansible-playbook --vault-pass-file=~/.ansible_pass setup-docker.yml'
+        sh 'ansible-playbook --vault-pass-file=~/.ansible_pass setup-build.yml'
       }
     }
   }
